@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SIPEKA – UNISA Kuningan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar no-print"><div class="in">
+  <button class="brand" id="brandHome" aria-label="Ke beranda"><span id="brandLogo"></span><span><b>SIPEKA</b><small id="brandSub">UNISA Kuningan</small></span></button>
+  <button class="ibtn" id="btnHelp" aria-label="Bantuan"><span class="ico" data-ico="help"></span></button>
+  <button class="ibtn" id="btnTheme" aria-label="Ganti tema"><span class="ico" id="icoTheme"></span></button>
+</div></div>
+
+<main class="wrap">
+
+  <!-- LANDING -->
+  <section id="viewLanding" class="view landing-view">
+    <div class="lhero no-print">
+      <div class="lhero-bg"></div>
+      <div class="lhero-in">
+        <div id="landLogo" class="llogo"></div>
+        <span class="lbadge">Universitas Islam Al-Ihya Kuningan</span>
+        <h1 class="ltitle">SIPEKA</h1>
+        <p class="ltag">Sistem Informasi Pengajuan Kegiatan &amp; Akademik — satu pintu untuk seluruh layanan surat di 4 fakultas, tanpa antre dan tanpa salah tulis nomor.</p>
+        <div class="lcta">
+          <button class="btn lbtn-primary" data-enter-app><span data-ico="arrow"></span>Buka Aplikasi SIPEKA</button>
+          <a class="btn lbtn-ghost" href="#fiturLanding">Lihat fitur</a>
+        </div>
+        <div class="lstats">
+          <div class="lstat"><b>4</b><span>Fakultas</span></div>
+          <div class="lstat"><b>11</b><span>Jenis Surat</span></div>
+          <div class="lstat"><b>24/7</b><span>Bisa diakses</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lbuilding no-print">
+      <div class="lbphoto"><img src="gedung-unisa.jpg" alt="Gedung Universitas Islam Al-Ihya Kuningan"></div>
+      <div class="lbtext">
+        <h2>Gedung UNISA Kuningan</h2>
+        <p>SIPEKA dibangun untuk civitas akademika Universitas Islam Al-Ihya Kuningan — mulai dari Fakultas Ilmu Kesehatan, Fakultas Ilmu Keislaman, Fakultas Keguruan dan Ilmu Pendidikan, hingga Fakultas Teknik — supaya urusan surat-menyurat bisa selesai dari mana saja, kapan saja.</p>
+        <div class="lfacrow" id="landFacRow"></div>
+      </div>
+    </div>
+
+    <h2 class="title no-print" id="fiturLanding">Kenapa Pakai SIPEKA</h2>
+    <p class="lead no-print">Semua yang dibutuhkan untuk mengurus surat akademik, dalam satu aplikasi ringan.</p>
+    <div class="lfeat no-print">
+      <div class="lfcard"><span class="ico" data-ico="file"></span><b>11 Jenis Layanan Surat</b><p>Dari surat tugas dosen sampai dispensasi mahasiswa, teks dan nomor surat tersusun otomatis.</p></div>
+      <div class="lfcard"><span class="ico" data-ico="hist"></span><b>Riwayat &amp; Status</b><p>Lacak posisi tiap surat — Dicetak, Diajukan, Diproses, hingga Selesai — kapan saja dibutuhkan.</p></div>
+      <div class="lfcard"><span class="ico" data-ico="cal"></span><b>Agenda Otomatis</b><p>Tanggal pelaksanaan dari surat yang terbit langsung muncul di kalender kegiatan.</p></div>
+      <div class="lfcard"><span class="ico" data-ico="share"></span><b>Bagikan Lewat Tautan</b><p>Kirim salinan digital surat ke pihak lain lewat satu tautan, tanpa perlu membuka aplikasi.</p></div>
+      <div class="lfcard"><span class="ico" data-ico="print"></span><b>Cetak PDF &amp; Word</b><p>Unduh surat siap cetak ukuran F4/A4, atau sebagai dokumen Word yang bisa diedit.</p></div>
+      <div class="lfcard"><span class="ico" data-ico="set"></span><b>Kop Surat per Fakultas</b><p>Setiap fakultas punya identitas, kode nomor, dan data dekan masing-masing.</p></div>
+    </div>
+
+    <button class="btn lbtn-primary lcta2 no-print" data-enter-app><span data-ico="arrow"></span>Mulai Ajukan Surat Sekarang</button>
+
+    <footer class="cr no-print">© 2026 Created by <b>Raffa Alviansyah</b> | Software Engineer. All Rights Reserved.</footer>
+  </section>
+
+    <!-- BERANDA -->
+  <section id="viewHome" class="view hide">
+    <div class="hero no-print">
+      <div class="hero-photo" aria-hidden="true"><img src="hero-beranda.jpg" alt=""></div>
+      <div id="heroLogo" class="logo"></div>
+      <h1>SIPEKA</h1>
+      <p class="sub">Sistem Informasi Pengajuan<br>Kegiatan &amp; Akademik</p>
+      <p class="fac" id="heroFac"></p>
+
+      <div class="clock" role="timer" aria-label="Jam digital">
+        <div class="ck-top"><span id="greet"></span><span class="tzchip" id="cTz"></span></div>
+        <div class="cells">
+          <span class="grp"><span class="dg" id="h1">0</span><span class="dg" id="h2">0</span></span><span class="cl">:</span>
+          <span class="grp"><span class="dg" id="m1">0</span><span class="dg" id="m2">0</span></span><span class="cl">:</span>
+          <span class="grp"><span class="dg" id="s1">0</span><span class="dg" id="s2">0</span></span>
+        </div>
+        <div class="ck-date"><b id="cDay"></b><span id="cDate"></span></div>
+        <div id="cLong"></div>
+        <div id="cHijri"></div>
+        <div class="secbar"><i id="secBar"></i></div>
+      </div>
+      <p class="quote" id="heroQuote"></p>
+    </div>
+
+    <div class="picker no-print">
+      <h3>Pilih fakultas</h3>
+      <div class="pgrid" id="pgrid"></div>
+    </div>
+
+    <div class="prayer no-print" id="prayer"></div>
+    <div id="agBanner" class="no-print"></div>
+    <div id="infoBar" class="no-print"></div>
+
+    <figure class="campus no-print"><img src="pusat-pelayanan.jpg" alt="Petugas di Pusat Pelayanan Terpadu UNISA Kuningan" loading="lazy"><figcaption><b>Pusat Pelayanan Terpadu</b><span>Universitas Islam Al-Ihya Kuningan</span></figcaption></figure>
+
+    <div class="stats no-print">
+      <div class="stat"><b id="stTotal">0</b><span>Surat dibuat</span></div>
+      <div class="stat"><b id="stProses">0</b><span>Dalam proses</span></div>
+      <div class="stat"><b id="stDone">0</b><span>Selesai</span></div>
+    </div>
+
+    <div id="quick" class="no-print"></div>
+
+    <h2 class="title no-print">Pilih Jenis Layanan Surat</h2>
+    <p class="lead no-print" id="leadFac"></p>
+    <div class="search no-print"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="q" type="search" placeholder="Cari layanan, contoh: penelitian" aria-label="Cari layanan"></div>
+    <div class="sgrid no-print" id="svcList"></div>
+
+    <footer class="cr no-print">© 2026 Created by <b>Raffa Alviansyah</b> | Software Engineer. All Rights Reserved.</footer>
+  </section>
+
+  <!-- AGENDA -->
+  <section id="viewAgenda" class="view page hide no-print">
+    <div class="pgh"><h2>Agenda</h2><p>Kalender kegiatan dari surat yang kamu buat, ditambah agenda pribadi.</p></div>
+    <div class="card">
+      <div class="calhd">
+        <button class="ibtn" id="calPrev" aria-label="Bulan sebelumnya"><span data-ico="chevL"></span></button>
+        <b id="calTitle"></b>
+        <button class="ibtn" id="calNext" aria-label="Bulan berikutnya"><span data-ico="chevR"></span></button>
+      </div>
+      <div class="cgrid" id="cGrid"></div>
+    </div>
+    <div class="lsthd"><h3 id="agHead">Akan datang</h3><button class="btn add sm" id="btnAgAdd"><span data-ico="plus"></span>Agenda</button></div>
+    <div id="agList"></div>
+  </section>
+
+  <!-- RIWAYAT -->
+  <section id="viewHist" class="view page hide no-print">
+    <div class="pgh"><h2>Riwayat &amp; Status</h2><p>Lacak posisi tiap pengajuan. Ketuk langkah untuk mengubah statusnya.</p></div>
+    <div class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="hq" type="search" placeholder="Cari nomor, nama, atau jenis surat" aria-label="Cari riwayat"></div>
+    <div class="chips" id="hChips"></div>
+    <div id="hList"></div>
+  </section>
+
+  <!-- PENGATURAN -->
+  <section id="viewSet" class="view page hide no-print">
+    <div class="pgh"><h2>Pengaturan</h2><p>Semua perubahan tersimpan otomatis di perangkat ini.</p></div>
+    <div id="setBody"></div>
+  </section>
+
+  <!-- FORM -->
+  <section id="viewForm" class="view hide">
+    <div class="formgrid">
+      <div class="no-print">
+        <div class="pubbar no-print" id="pubBanner"><div><span class="pill">Salinan Surat Digital</span><div id="pubInfo" class="mut" style="margin:6px 0 0"></div></div><button class="btn line sm" id="pubExit">Buka SIPEKA</button></div>
+        <button class="back no-pub" id="btnBack"><span class="ico" data-ico="back"></span> Kembali ke daftar layanan</button>
+        <div class="formcard no-pub">
+          <div class="fhead"><div><small id="formFac"></small><h3 id="formTitle"></h3></div><button class="linkbtn" id="btnClear">Bersihkan</button></div>
+          <div class="fbody" id="formBody"></div>
+        </div>
+        <div class="actions">
+          <button class="btn b-print" id="btnPrint"><span data-ico="print"></span><span id="printLbl">Download/Cetak PDF Resmi (F4)</span></button>
+          <button class="btn b-reset no-pub" id="btnReset">Reset No. ke 1</button>
+          <button class="btn b-home no-pub" id="btnHome">Home</button>
+          <button class="btn b-alt" id="btnDoc"><span data-ico="word"></span>Unduh Word (.doc)</button>
+          <div class="seg" aria-label="Ukuran kertas"><button type="button" data-paper="f4" aria-pressed="true">F4</button><button type="button" data-paper="a4" aria-pressed="false">A4</button></div>
+          <button class="btn b-alt no-pub" id="btnShare"><span data-ico="share"></span>Bagikan link surat</button>
+          <button class="btn b-alt no-pub" id="btnWA">Kirim data ke Admin (WA)</button>
+          <button class="btn b-alt no-pub" id="btnCopy"><span data-ico="copy"></span>Salin ringkasan</button>
+        </div>
+      </div>
+      <div class="pvcol">
+        <div class="pvbar no-print"><b>Pratinjau surat</b>
+          <div class="ztools"><button class="zb" id="zOut" aria-label="Perkecil"><span data-ico="zoomout"></span></button><span id="zpct">100%</span><button class="zb" id="zIn" aria-label="Perbesar"><span data-ico="zoomin"></span></button><button class="zb" id="zFit">Pas</button></div>
+        </div>
+        <div class="pv" id="pv"><div class="pscale" id="pscale"><div id="paper"></div></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<nav class="bnav no-print" aria-label="Navigasi utama">
+  <button data-go="Home" class="on"><span class="ni" data-ico="home"></span>Beranda</button>
+  <button data-go="Agenda"><span class="ni" data-ico="cal"></span>Agenda</button>
+  <button data-go="Hist"><span class="ni" data-ico="hist"></span>Riwayat<span class="nbadge hide" id="nbHist">0</span></button>
+  <button data-go="Set"><span class="ni" data-ico="set"></span>Pengaturan</button>
+</nav>
+
+<a id="fab" class="no-print" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>Chat Admin</a>
+<div class="modal no-print" id="modal"><div class="sheet" id="sheet"></div></div>
+<input type="file" id="fileImp" accept="application/json,.json" hidden>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
